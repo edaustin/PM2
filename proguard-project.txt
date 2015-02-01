@@ -1,6 +1,12 @@
-# Copyright (c) 2013 Wes Lanning, http://codingcreation.com
+# Copyright (c) 2013 Wes Lanning, http://codingcreation.com 
+# Copyright (c) Ed Austin 2014/2015
 
-#misc
+# Various optimizations and tricks to run Scala on Android
+# Additional Security proguard stuff
+
+
+
+#misc opt
 -optimizationpasses 5
 
 
