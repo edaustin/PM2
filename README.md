@@ -12,7 +12,7 @@ Security is also provided across the JNI barrier using basic encryption.
 
 Tested on a wide variety of screen sizes/densities and should run on any API14+ (4.0 ICS) tablet of at least 6".
 
-Bugs probably there but I think have ironed out most of them.
+Bugs: Some UI issues relating to unknown devices. Was tested on Xoom 10, Nexus 7 2013, Amazon Kindle Fire HD and various GenyMotion implementations from ICS through KK.
 
 TODO: Needs a huge cleanup of the Scala/Java to follow common OOP idioms. Likely subtype polymorphism and coding to
 interfaces would be the first major change coupled with proper variable scoping both in class and methods.
