@@ -14,7 +14,7 @@ Tested on a wide variety of screen sizes/densities and should run on any API14+ 
 
 Bugs probably there but I think have ironed out most of them.
 
-TODO: Needs a huge cleanup of the Scala/Java to follow common OOP idoms. Likely subtype polymorphism and coding to
+TODO: Needs a huge cleanup of the Scala/Java to follow common OOP idioms. Likely subtype polymorphism and coding to
 interfaces would be the first major change coupled with proper variable scoping both in class and methods.
 
 Versions: final val VERSION:String = "Pro" can be changed in PrimaryActivity to switch versions to a "lite" version.
