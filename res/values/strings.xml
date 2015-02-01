@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Poker Cowboy Lite</string>
+    <string name="help_name">Poker Cowboy Help</string>
+    <string name="id_desc_cards">cards</string>
+    <string name="versionSplash">Poker Cowboy V1.1.5 &#169;2014 ryersoft - Please wait for Tables Loading....</string>
+    <string name="desc">desc</string>
+    <string name="pmLogo">pmLogo</string>
+    <string name="miniStatus">Waiting for Pre-Flop Input</string>
+    <string name="equityString">pf Equity</string>
+    <string name="upperLabel">build-info</string>
+    <string name="distributionText">Opponent Range Spread</string>
+    <string name="distributionText2">str</string>
+    <string name="statBarSmall">Current Range</string>
+    <string name="vlo">Medium Text</string>
+    <string name="vhi">Medium Text</string>
+    <string name="clearall">CLEAR ALL</string>
+    <string name="bigstatusline">Awaiting Input...</string>
+    <string name="clear_all">CLEAR ALL</string>
+    <string name="options">OPTIONS</string>
+    <string name="miniCard1">miniCard1</string>
+    <string name="miniCard2">miniCard2</string>
+    <string name="miniCard3">miniCard3</string>
+    <string name="miniCard4">miniCard4</string>
+    <string name="miniCard5">miniCard5</string>
+    <string name="miniCard6">miniCard6</string>
+    <string name="miniCard7">miniCard7</string>
+    <string name="statsview">Awaiting flop complete to generate statistics.</string>
+    <string name="equitytext">Hand Equity</string>
+    <string name="splashimagetext">cowboy</string>
+    <string name="splashtext">Poker Cowboy Poker Analyser 1.1.5</string>
+</resources>

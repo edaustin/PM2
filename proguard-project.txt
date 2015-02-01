@@ -1,0 +1,96 @@
+# Copyright (c) 2013 Wes Lanning, http://codingcreation.com
+
+#misc
+-optimizationpasses 5
+
+
+#http://proguard.sourceforge.net/manual/examples.html
+#for each
+#PrimaryActivity$$anon$1.smali                                 WheelView$2.smali
+#PrimaryActivity$$anon$20.smali                                WheelViewAdapter.smali
+#PrimaryActivity$$anon$21.smali                                WheelView.smali
+
+#to
+#bl$2.smali  co$15.smali    eh.smali     gk$b.smali    iq$b.smali  kf.smali        mb$c.smali    nr$e.smali    pq.smali      rv.smali    ts$a.smali
+#bl.smali    co$16.smali    ei.smali     gk$c$a.smali  iq$c.smali  kg.smali        mb$d.smali    nr$f.smali    pr.smali      rw$a.smali  t.smali
+
+-repackageclasses ''
+-allowaccessmodification
+-overloadaggressively
+
+
+##01-12-14 to suppress multitudes of warnings
+
+-dontwarn sun.misc.Unsafe
+
+-dontwarn javax.**
+-dontwarn java.awt.**
+-dontwarn java.swing.**
+
+-dontwarn org.fusesource.**
+
+-dontwarn **$$anonfun$*
+
+-dontwarn com.example.android_scala**
+
+-dontwarn scala.**
+
+-dontnote org.xml.sax.EntityResolver
+
+#(org.apache.james.mime4j.storage.StorageProvider)Class.forName(variable).newInstance()
+-dontnote org.apache.james.mime4j.storage.DefaultStorageProvider
+
+-dontnote scala.android.app.Activity
+
+## Fixes ==> Warning: ... can't find referenced class sun.misc.Unsafe
+##-libraryjars "libs\scala-library-2.9.2.jar"
+
+-dontwarn android.support.v4.**
+
+## 27-7-14 started obfuscating
+-dontobfuscate
+## 29-7-14 now optimizing
+-dontoptimize
+-dontpreverify
+
+-dontskipnonpubliclibraryclasses
+-dontskipnonpubliclibraryclassmembers
+
+#scala.Enumeration accesses a field 'MODULE$' dynamically
+-dontnote scala.Enumeration
+
+#(org.xml.sax.EntityResolver)Class.forName(variable).newInstance()
+-dontnote org.xml.sax.EntityResolver
+
+#(org.apache.james.mime4j.storage.StorageProvider)Class.forName(variable).newInstance()
+-dontnote org.apache.james.mime4j.storage.DefaultStorageProvider
+
+-keepattributes Exceptions,InnerClasses,Signature,Deprecated, SourceFile,LineNumberTable,Annotation,EnclosingMethod
+
+-keep class com.droidroid.**
+
+
+##ea added 06/28/13 - or fail
+-dontwarn com.google.android.gms.**
+##libraryjars libs/google-play-services.jar
+
+
+##other newer? version
+##github.com/yareally/android-scala-intellij-no-sbt-plugin
+
+#as per developer.android.com - to prevent class stripping 06/27/13
+-keep class * extends java.util.ListResourceBundle {
+    protected Object[][] getContents();
+}
+
+
+-assumenosideeffects class android.util.Log {
+    public static boolean isLoggable(java.lang.String, int);
+    public static *** v(...);
+    public static *** i(...);
+    public static *** w(...);
+    public static *** d(...);
+    public static *** e(...);
+    public static *** wtf(...);
+}
+

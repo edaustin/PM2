@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+</head>
+<body bgcolor="#FFFFFF">
+    <meta charset="UTF-8">
+    <title>HELP</title>
+    <h1>PM Help</h1>
+1326 Possible hands enumerated on the Villain Range Chart
+
+    <h2 style="color:blue;">General</h2>
+    <font size="5dp">
+    PM is a Texas Hold 'em Poker analyser written to run on Android devices. It significantly improves on every Hold 'em calculator on the market by offering several completely unique features.
+    </font>
+
+    <h2 style="color:blue;">Wheel Entry System</h2>
+    The user dials in their hand from left to right. At any stage the player may go back to a previous wheel, however all forward wheels are then reset, this is
+    required for the algorithm to recalculate the hand correctly therefore flop pre-flop must be entered before flop before turn before river, this mirrors the game.
+    <font size="5dp">
+
+    </font>
+
+    <h2 style="color:blue;">Pre-flop</h2>
+    <font size="5dp">
+    The player (designated 'Hero' in Poker terminology) dials in their two 'hole/'pocket' cards.
+    <br>
+    <br>
+    PM computes the cards strength vs. other players (designated 'Villains' in Poker terminology) displaying this in a bar graph along with the Chen factor (normalized).
+    The graph is displayed in three colors, the Red being the Villain pocket cards that are stronger than your own, the Green indicates you strength and the Yellow
+    indicates Villains pocket cars that are potentially weaker than yours. You can view instant pre-flop strength here.
+    <br>
+    Invalid or no selection greys out the pre-flop strength bar graph.
+    </font>
+
+
+    <h2 style="color:blue;">Flop</h2>
+    <font size="5dp">
+    After pre-flop the player enters the flop cards. After this has been completed the software evaluates a number of factors.
+    <br><br>
+    1. Computes on the right hand side of the screen ALL possible card combinations available at the Flop including Villain (other player) cards and presents them in a scroll
+    control that allows the player to instantly analyse their card strength. Again, Villains potential high cards red, the players cards are shown as green (and highlighted) whilst the villains
+    potentially lower cards are shown in yellow. Similar coloring to the pre-flop bar graph color scheme. Touching the item initiates a pop-up with the pre-flop cards for that hand.
+    <br><br>
+    Another feature is that the card combination is highlighted IF the pre-flop range was demonstrably weak, indicating the hand is more unlikely as usually a villain would
+    fold the hand pre-flop. Obviously this is far from fool-proof. The criteria for highlighting is a hand less than 25% weighted strength, these are weak hands rarely played consistently to the flop.
+
+    <br><br>
+    2. Best Turn/River 'out' for Hero  is shown for Hero in the Status box (below the Turn/River card wheels).
+    <br><br>
+    3. Auto evaluates your best current hand and displays it in the mini card sequence as well as on the status bar.
+    </font>
+
+
+    <h2 style="color:blue;">Turn</h2>
+    <font size="5dp">
+    </font>
+
+    <h2 style="color:blue;">River</h2>
+
+    <font size="5dp">
+        <font size="5dp">
+    </font>
+
+    <h2 style="color:blue;">Notes</h2>
+    <font size="5dp">
+            Pre-flop algorithms are not definitive.
+        <br><br>
+            Wheels need to settle before an accurate reading is given. Selecting a previously used card will give erratic results.
+            This is usually avoided as used cards are indicated in the wheel values as red backs. In summary, all card values must be unique.
+
+        <br><br>
+            If the player has the nuts (such as a Royal Flush) no Red (Villain) or Green (Hero equals) are shown in the hand analysis only the Yellow (Villain) lower hands are shown.
+            This is normal operation. No Hero position is shown between Villain hi-lo's if an exact match is not found, in this case only a better or worse hand can differentiate from the
+            current (without equal) hand.
+
+     </font>
+
+
+    <h2 style="color:blue;">Bugs/Support</h2>
+    <font size="5dp">
+    Build 1.1.0 stabilo-release<br>
+    &copy; Ryer Software 2014.<br>
+    All support enquiries to ed@ryer.ru<br>
+    Comments always welcome.<br>
+    </font>
+
+
+        <h3 style="color:blue;">Technical</h2>
+        <font size="3dp">
+            Android SDK/NDK, Scala/Java/C.
+        </font>
+        <h3 style="color:blue;">Licencing Acknowledgement</h2>
+        <font size="3dp">
+            Portions of the code were licensed under the Apache 2.0 licence.
+        </font>
+
+
+
+
+</body>
+</html>

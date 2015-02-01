@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight=".50"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:id="@+id/statusBox"
+        android:measureWithLargestChild="false"
+        android:onClick="onClickFlipChart">
+
+    <FrameLayout
+            android:id="@+id/rchart"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp"
+            android:layout_weight=".25"
+            >
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/distributionText"
+                android:id="@+id/textView"
+                android:layout_gravity="center"
+                android:textColor="#ff8b8b8b"/>
+    </FrameLayout>
+
+    <FrameLayout
+            android:id="@+id/mypos"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp"
+            android:layout_weight=".75"
+            android:background="@drawable/customborders_redv2">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/distributionText2"
+                android:id="@+id/hmid"
+                android:layout_gravity="center"
+                android:textColor="#ff8b8b8b"
+                android:textSize="20dp"
+                android:textIsSelectable="false"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/vhi"
+                android:layout_gravity="center_horizontal|top"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_marginTop="10dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/vlo"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textColor="@android:color/holo_orange_light"
+                android:layout_marginBottom="10dp"/>
+    </FrameLayout>
+
+</LinearLayout>

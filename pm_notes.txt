@@ -1,0 +1,135 @@
+
+web site sections
+
+Top Status Bar
+Wheel Entry System
+Mini Status Bar
+pf Strength Chart
+Current Best Hand Indicator
+Current Hand Distribution (Outs) Chart
+QSI Quick Strength Indicator
+Current Best Available Outs
+(Current Best Available Outs Table)
+Complete Range Indicator (Current Hand Strength and Monte-Carlo All-in equity to River)
+
+
+-----net comments
+
+**What matters is the equity of your current hand on the current board versus your opponent(s)' current range**
+
+If you need to compute equities involving many players with fat distributions in fractions of a second, you'll gravitate towards Monte Carlo (rather than
+exhaustive)
+
+
+
+------
+
+need to iterate off-UI all the villain range vs current hero and order the listview by equity of each hand, this will effectively show you the hands that
+will likely beat you in the current game unlike the strength indicator which will only show you the CURRENT situation (useful only as a guide) as for example
+you might be one from a royal flush (1-4) but the Villains22 beats you currently!
+give this as an example flush against 22!
+show the outs and discuss!
+
+s calc off ui and dynamically write back to the UI updating as we progress
+
+
+Instant Pre-flop weightings (heads-up, 6Max, ,10Max chen) shows your pre-flop hand strength.
+
+Analysis of flop texture with Player optimal hand displayed.
+
+Hero flop compared in real-time with all possible Villain hands with feedback of your hand-strength v Villain possibles. You can scroll through every possible hand color coded according to strength.
+This allows you to compare your hand with the hand villains potentially hold and act accordingly, it also shows 'the nuts'. Also Full Flop range of all Players hands displayed graphically and
+evaluated by strength and All-in-equity.
+
+
+
+Displays all your current odds of achieving an out at any stage.
+
+Predicts Villain and Hero best hand at Turn an River and compares with your current hand!
+
+
+
+Requires:
+It has been designed to run on any AOSP 7"+ device with at least API 11 (HC 3.0.0). Dual core recommended but not essential.
+
+
+Technical:
+Pokermatic 2 was entirely written in Scala 2.10 with the IDEA12/13 platform coupled with the NDK (and C) for the implementation of the Combinatorial algorithms.
+Java Libraries used: commons.io, bouncycastle, achartengine.
+
+
+What this application DOES not do:
+Connect the Internet in any way. No special rights are needed...
+
+Usage is fairly self-explanatory however please email ed@ryer.ru for any clarification and I will be glad to assist.
+
+FLUSH ICON IN LIST
+
+
+t h
+6 c
+9 h
+5 s
+4 h
+q h
+
+ndk t6 cards are OK (correct pf f t)
+66aq2 = 5104
+
+
+
+pokerlogic.co.uk
+
+
+66aq2 = always where it goes wrong!
+
+h5outs needs eval6!
+
+
+use some way to obfuscate the ndkalg lib
+
+change:
+hu 3m 6m 10m (and simply show average weighted)
+
+make buttons
+1 Advice
+You have a strong hand rated currently at Turn in the top 14%
+2
+3 Hero Outs with %
+4 Villain Outs with %
+announces as "Villain Turn Statistics"
+
+http://www.google.co.uk/imgres?imgurl=https%3A%2F%2Fcamo.githubusercontent.com%2F68966cfe8d2e4a40198cd3b0d98343fdf0673979%2F687474703a2f2f6c6f6e6461746967612e6e65742f696d616765732f717569636b616374696f6e33645f766572746963616c2e706e67&imgrefurl=https%3A%2F%2Fgithub.com%2Florensiuswlt%2FNewQuickAction3D&h=480&w=320&tbnid=UFk3Itse17xq2M%3A&zoom=1&docid=6YjmgR3Vi4CYXM&ei=zzDQU-jcPK7G7AbHvYC4Dw&tbm=isch&ved=0CDEQMygQMBA&iact=rc&uact=3&dur=592&page=1&start=0&ndsp=52
+
+
+need to do
+
+wrap in container args for async task
+change crypto to an async task passing in params
+
+
+problems
+passing ctx into an async task
+container = x
+cxonstructor = x
+
+
+issue: trying to get AsyncTask working in Scala
+
+  Caused by: java.lang.AbstractMethodError: abstract method not implemented
+            at android.os.AsyncTask.doInBackground(AsyncTask.java)
+
+used
+/data/adt/android-sdk-linux/build-tools/20.0.0/dexdump
+find AsyncTask
+not implemented method
+
+problem
+java -> scala autoconvert didn't add the override!
+as didn't bother @Override the original
+
+   override protected def doInBackground(ctx: Context*): Void = {}
+
+
+
+

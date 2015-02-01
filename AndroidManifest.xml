@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.droidroid.PM2"
+          android:versionCode="4"
+          android:versionName="1.1.5"
+        >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!--- ics upwards -->
+    <uses-sdk android:minSdkVersion="14"
+              android:targetSdkVersion="19"
+              />
+
+    <!-- we need at least 1024x600 'tablet' screen real estate -->
+    <supports-screens android:smallScreens="false"
+                      android:normalScreens="false"
+                      android:largeScreens="true"
+                      android:xlargeScreens="true"
+                      android:requiresSmallestWidthDp="600" />
+
+
+    <application
+            android:label="@string/app_name"
+            android:icon="@drawable/cowboy6464">
+
+
+        <activity
+                android:name="com.droidroid.PM2.SplashActivity"
+                android:label="@string/app_name"
+                android:screenOrientation="landscape"
+                android:launchMode="singleTask"
+                >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+
+        </activity>
+
+        <activity
+            android:name=".PrimaryActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:launchMode="singleTask"
+            >
+
+        </activity>
+
+        <service android:enabled="true" android:name=".EquityBroadcastServiceWrapper" />
+
+    </application>
+</manifest>
