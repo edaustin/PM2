@@ -6,7 +6,6 @@ import org.bouncycastle.jce.provider.BouncyCastleProvider;
 import javax.crypto.Cipher;
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.PBEKeySpec;
-import javax.crypto.spec.SecretKeySpec;
 import java.io.*;
 import java.security.Security;
 

@@ -3,7 +3,6 @@ package com.droidroid.PM2;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Color;
-//import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.SimpleAdapter;
@@ -14,6 +13,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.regex.Pattern;
+
+//import android.util.Log;
 
 
 // ListView for Villain Range

@@ -3,41 +3,36 @@ package com.droidroid.PM2
 
 //import java.util.concurrent.Executors
 
-import android.R.{array, drawable}
+import android.R.drawable
 import android.content.res.Configuration
 import android.net.Uri
 import com.google.analytics.tracking.android.EasyTracker
 
 //import android.animation.{AnimatorListenerAdapter, Animator}
-import android.app.{AlarmManager, PendingIntent, Activity}
-import android.os.{IBinder, Handler, AsyncTask, Bundle}
-import android.view._
-import android.widget._
-import android.graphics.{Point, Color}
+import android.app.Activity
 import android.content._
-import android.widget.AdapterView.OnItemClickListener
-
+import android.graphics.{Color, Point}
+import android.os.{AsyncTask, Bundle, IBinder}
 import android.support.v4.content.LocalBroadcastManager
+import android.view._
+import android.widget.AdapterView.OnItemClickListener
+import android.widget._
 
 import scala.collection.mutable
 
 //import android.speech.{RecognitionListener, RecognizerIntent, SpeechRecognizer}
 //import android.util.{DisplayMetrics, Log}
-import android.graphics.Paint.Align
-
-
-
-import org.achartengine.ChartFactory
-import org.achartengine.chart.BarChart.Type
-import org.achartengine.model.{SeriesSelection, XYSeries, CategorySeries, XYMultipleSeriesDataset}
-import org.achartengine.renderer.{XYSeriesRenderer, SimpleSeriesRenderer, XYMultipleSeriesRenderer}
-
-import com.google.gson.Gson
-
 import java.util
 
+import android.graphics.Paint.Align
+import com.google.gson.Gson
+import org.achartengine.ChartFactory
+import org.achartengine.chart.BarChart.Type
+import org.achartengine.model.{CategorySeries, SeriesSelection, XYMultipleSeriesDataset, XYSeries}
+import org.achartengine.renderer.{XYMultipleSeriesRenderer, XYSeriesRenderer}
+
+import scala.Array._
 import scala.Predef._
-import Array._
 import scala.concurrent.ops._
 
 //import scala.concurrent.{ExecutionContext, Await, future}

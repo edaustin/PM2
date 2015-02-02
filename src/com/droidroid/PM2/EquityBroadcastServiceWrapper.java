@@ -6,9 +6,10 @@ import android.os.Binder;
 import android.os.Handler;
 import android.os.IBinder;
 import android.support.v4.content.LocalBroadcastManager;
-//import android.util.Log;
 
 import java.text.DecimalFormat;
+
+//import android.util.Log;
 //import java.util.Calendar;
 
 /**

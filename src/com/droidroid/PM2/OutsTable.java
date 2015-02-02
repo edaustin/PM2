@@ -2,15 +2,18 @@ package com.droidroid.PM2;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-//import android.content.res.ColorStateList;
 import android.graphics.Color;
-//import android.util.Log;
 import android.view.Gravity;
-//import android.view.View;
-import android.widget.*;
+import android.widget.TableLayout;
+import android.widget.TableRow;
+import android.widget.TextView;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
+
+//import android.content.res.ColorStateList;
+//import android.util.Log;
+//import android.view.View;
 //import java.util.Arrays;
 //import java.util.Collections;
 //import java.util.List;

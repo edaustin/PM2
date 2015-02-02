@@ -2,11 +2,10 @@ package com.droidroid.PM2;
 
 
 import android.app.Activity;
-        import android.os.Bundle;
-
-        import android.view.Window;
-        import android.webkit.WebView;
-        import android.webkit.WebViewClient;
+import android.os.Bundle;
+import android.view.Window;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 public class HelpActivity extends Activity {
     private WebView mWebView;

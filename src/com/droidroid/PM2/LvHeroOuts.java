@@ -3,14 +3,18 @@ package com.droidroid.PM2;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Color;
-import android.preference.Preference;
-//import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.*;
-import scala.Array;
+import android.widget.BaseAdapter;
+import android.widget.SimpleAdapter;
+import android.widget.TextView;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+//import android.util.Log;
 
 /**
  * Created by ed on 7/31/14.

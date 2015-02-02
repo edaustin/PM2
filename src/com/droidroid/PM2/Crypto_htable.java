@@ -1,7 +1,6 @@
 package com.droidroid.PM2;
 
 import android.content.Context;
-import android.os.AsyncTask;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
 
 import javax.crypto.Cipher;

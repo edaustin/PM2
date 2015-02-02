@@ -19,11 +19,6 @@
 
 package com.droidroid.PM2;
 
-import java.util.LinkedList;
-import java.util.List;
-
-import com.droidroid.PM2.R;
-import com.droidroid.PM2.WheelViewAdapter;
 import android.content.Context;
 import android.database.DataSetObserver;
 import android.graphics.Canvas;
@@ -36,6 +31,9 @@ import android.view.View;
 import android.view.ViewGroup.LayoutParams;
 import android.view.animation.Interpolator;
 import android.widget.LinearLayout;
+
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * Numeric wheel view.

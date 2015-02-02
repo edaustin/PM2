@@ -2,13 +2,10 @@ package com{
 package droidroid {
 package PM2 {
 
-import _root_.android.content.{Intent, Context}
-import _root_.android.R.array
+import _root_.android.content.Context
 import _root_.android.os.Build
-import _root_.android.util.Log
-import _root_.android.widget.{FrameLayout, Toast}
-import scala.Array
-import java.util
+
+import _root_.android.R.drawable
 
 
 //TODO: Card_s and Card_v need to be transposed in name
