@@ -18,7 +18,7 @@ Some UI issues relating to unknown devices. Was tested on Xoom 10, Nexus 7 2013,
 
 ### TODO:
 Needs a huge cleanup of the Scala/Java to follow common OOP idioms. Likely subtype polymorphism and coding to
-interfaces would be the first major change coupled with proper variable scoping both in class and methods. Enums as well would make things clearer.
+interfaces would be the first major change coupled with proper variable scoping both in class and methods. Enums as well would make things clearer. Fix the leaky binder...
 
 ### VERSIONS:
 Versions: final val VERSION:String = "Pro" can be changed in PrimaryActivity to switch versions to a "lite" version.
