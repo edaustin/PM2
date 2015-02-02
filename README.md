@@ -16,12 +16,12 @@ Tested on a wide variety of screen sizes/densities and should run on any API14+ 
 ### Bugs:
 Some UI issues relating to unknown devices. Was tested on Xoom 10, Nexus 7 2013, Amazon Kindle Fire HD and various GenyMotion implementations running ICS through KK.
 
+### Versions:
+Versions: final val VERSION:String = "Pro" can be changed in PrimaryActivity to switch versions to a "lite" version.
+
 ### TODO:
 Needs a huge cleanup of the Scala/Java to follow common OOP idioms. Likely subtype polymorphism and coding to
 interfaces would be the first major change coupled with proper variable scoping both in class and methods. Enums as well would make things clearer. Fix the leaky binder...
-
-### VERSIONS:
-Versions: final val VERSION:String = "Pro" can be changed in PrimaryActivity to switch versions to a "lite" version.
 
 
 ### Libraries used:
